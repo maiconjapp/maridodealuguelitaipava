@@ -1,110 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta name="google-site-verification" content="B4XI427-YkvliZzXGIkZ_EwsxfJxxgfUzZ_awzKb4Vk" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marido de Aluguel em Itaipava RJ – Encanador, eletricista, desentupimento e pequenos reparos. Atendimento rápido via WhatsApp com garantia.">
-    <title>Marido de Aluguel Petrópolis - Serviços em Itaipava RJ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marido de Aluguel em Itaipava RJ - Encanador, eletricista, desentupimento, limpeza de estofados e pequenos reparos. Atendimento rápido via WhatsApp (24) 98104-4713">
+  <meta name="google-site-verification" content="B4XI4Z7-Ykv1lzZkXjTKZ_Ewsxf3xgfUZz_awzKb4Vk" />
+  <title>Marido de Aluguel Itaipava RJ | Reparos Rápidos</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9aaf2b2b2c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Marido de Aluguel Petrópolis</h1>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="bairros.html">Bairros Atendidos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Serviços de Qualidade em Itaipava</h2>
-                <p>Atendimento rápido e profissional para todos os seus reparos</p>
-                <a href="https://wa.me/5524981044713" class="whatsapp-button">
-                    <i class="fab fa-whatsapp"></i> (24) 98104-4713
-                </a>
-            </div>
-        </section>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-blue-700 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Marido de Aluguel Itaipava</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#servicos" class="hover:underline">Serviços</a>
+        <a href="#bairros" class="hover:underline">Bairros</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-        <section class="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <i class="fas fa-wrench"></i>
-                    <h3>Desentupimento</h3>
-                    <p>Ralo, pia, vaso e muito mais</p>
-                </div>
-                <div class="servico-card">
-                    <i class="fas fa-broom"></i>
-                    <h3>Limpeza de Estofados</h3>
-                    <p>Sofás, poltronas e cadeiras</p>
-                </div>
-                <div class="servico-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Encanador</h3>
-                    <p>Vazamentos e troca de torneiras</p>
-                </div>
-                <div class="servico-card">
-                    <i class="fas fa-bolt"></i>
-                    <h3>Eletricista</h3>
-                    <p>Instalações e reparos elétricos</p>
-                </div>
-            </div>
-        </section>
+  <!-- Hero -->
+  <section class="bg-white text-center py-10 px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Serviços Profissionais em Itaipava RJ</h2>
+    <p class="mb-6">Encanador, eletricista, limpeza de estofados, desentupimento e pequenos reparos</p>
+    <a href="https://wa.me/5524981044713" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-600 inline-block">
+      <i class="fab fa-whatsapp mr-2"></i> Chame no WhatsApp
+    </a>
+  </section>
 
-        <section class="mapa">
-            <h2>Nossa Localização</h2>
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.328674715123!2d-43.2234!3d-22.5067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMwJzI0LjEiUyA0M8KwMTMnMjQuMiJX!5e0!3m2!1spt-BR!2sbr!4v1645567890123!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
-
-        <section class="contato">
-            <h2>Entre em Contato</h2>
-            <form id="contatoForm">
-                <input type="text" placeholder="Nome" required>
-                <input type="tel" placeholder="Telefone" required>
-                <input type="text" placeholder="Endereço" required>
-                <select required>
-                    <option value="">Selecione um serviço</option>
-                    <option value="desentupimento">Desentupimento</option>
-                    <option value="limpeza">Limpeza de Estofados</option>
-                    <option value="encanador">Encanador</option>
-                    <option value="eletricista">Eletricista</option>
-                    <option value="reparos">Pequenos Reparos</option>
-                </select>
-                <textarea placeholder="Descreva o serviço necessário" required></textarea>
-                <button type="submit">Enviar via WhatsApp</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.instagram.com/maridodealuguelpetropolisrj" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://wa.me/5524981044713" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-            <p>&copy; 2024 Marido de Aluguel Petrópolis. Todos os direitos reservados.</p>
+  <!-- Serviços -->
+  <section id="servicos" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-center">Nossos Serviços</h3>
+      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fas fa-tools text-blue-600 text-3xl mb-3"></i>
+          <h4 class="font-bold mb-2">Pequenos Reparos</h4>
+          <p>Montagem de suportes, prateleiras, quadros, ajustes e instalações em geral.</p>
         </div>
-    </footer>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fas fa-faucet text-blue-600 text-3xl mb-3"></i>
+          <h4 class="font-bold mb-2">Encanador</h4>
+          <p>Conserto de vazamentos, troca de torneiras, instalação de pias e máquinas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fas fa-bolt text-blue-600 text-3xl mb-3"></i>
+          <h4 class="font-bold mb-2">Eletricista</h4>
+          <p>Instalação de tomadas, disjuntores, chuveiros, luminárias e muito mais.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fas fa-couch text-blue-600 text-3xl mb-3"></i>
+          <h4 class="font-bold mb-2">Limpeza de Estofados</h4>
+          <p>Sofás, cadeiras, poltronas, colchões com extração de sujeira e ácaros.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <i class="fas fa-toilet text-blue-600 text-3xl mb-3"></i>
+          <h4 class="font-bold mb-2">Desentupimento</h4>
+          <p>Pias, ralos, vasos sanitários e tanques. Solução rápida e sem sujeira.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Contato -->
+  <section id="contato" class="py-12 bg-white">
+    <div class="container mx-auto px-4 max-w-xl">
+      <h3 class="text-2xl font-bold mb-6 text-center">Solicite um Orçamento</h3>
+      <form id="formulario" class="space-y-4">
+        <input type="text" id="nome" placeholder="Seu nome" required class="w-full border p-3 rounded">
+        <input type="tel" id="telefone" placeholder="Telefone com DDD" required class="w-full border p-3 rounded">
+        <input type="text" id="endereco" placeholder="Endereço completo" required class="w-full border p-3 rounded">
+        <select id="servico" required class="w-full border p-3 rounded">
+          <option value="">Selecione o serviço</option>
+          <option value="Pequenos Reparos">Pequenos Reparos</option>
+          <option value="Encanador">Encanador</option>
+          <option value="Eletricista">Eletricista</option>
+          <option value="Limpeza de Estofados">Limpeza de Estofados</option>
+          <option value="Desentupimento">Desentupimento</option>
+        </select>
+        <textarea id="descricao" rows="4" placeholder="Descreva o problema ou serviço desejado" required class="w-full border p-3 rounded"></textarea>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded">Enviar para o WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Botão WhatsApp flutuante -->
+  <a href="https://wa.me/5524981044713" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 text-white text-xl z-50" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    document.getElementById("formulario").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const endereco = document.getElementById("endereco").value;
+      const servico = document.getElementById("servico").value;
+      const descricao = document.getElementById("descricao").value;
+      const msg = `Nome: ${nome}%0ATelefone: ${telefone}%0AEndereço: ${endereco}%0AServiço: ${servico}%0ADescrição: ${descricao}`;
+      const link = `https://wa.me/5524981044713?text=${msg}`;
+      window.open(link, '_blank');
+    });
+  </script>
 </body>
-</html> 
+
+</html>
