@@ -1,1 +1,18 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Marido de Aluguel Petrópolis</name>
+    <description>Localização da empresa em Itaipava, Petrópolis - RJ</description>
+    <Placemark>
+      <name>Marido de Aluguel Petrópolis</name>
+      <description>
+        Serviços de marido de aluguel em Itaipava e região
+        Telefone: (24) 98104-4713
+        WhatsApp: https://wa.me/5524981044713
+      </description>
+      <Point>
+        <coordinates>-43.2234,-22.5067,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml> 
