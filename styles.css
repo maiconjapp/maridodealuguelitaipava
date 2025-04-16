@@ -1,147 +1,177 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  background-color: #000;
+  color: #eee;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #0f0; /* Link na cor neon verde */
+  text-decoration: none;
+  transition: text-shadow 0.2s;
+}
+a:hover {
+  text-shadow: 0 0 6px #0f0;
+}
 header {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 1rem;
+  background-color: #111;
 }
-
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  border-bottom: 2px solid #0f0;
+}
+nav a {
+  margin: 5px 15px;
+  font-weight: bold;
+}
+nav a.ativo {
+  text-shadow: 0 0 5px #0f0;
+}
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 1.5em 0 1em;
+  border-bottom: 1px solid #0f0;
+  display: inline-block;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 1em 0 0.3em;
+}
+p {
+  margin-bottom: 1em;
+}
+ul {
+  margin-left: 1.2em;
+  margin-bottom: 1em;
+}
+ul.lista-bairros li {
+  margin-bottom: 0.5em;
+}
+ul.redes-sociais {
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+ul.redes-sociais li {
+  display: inline;
+  margin-right: 15px;
+}
+ul.redes-sociais li a:hover {
+  text-decoration: underline;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 1.5rem;
+/* Formulário de contato */
+form#form-contato {
+  max-width: 500px;
+}
+form label {
+  display: block;
+  margin: 0.5em 0 0.2em;
+  font-size: 0.95em;
+  color: #ccc;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1em;
+  border: 1px solid #555;
+  background: #222;
+  color: #fff;
+  border-radius: 4px;
+  font-family: 'Orbitron', sans-serif;
+}
+form input::placeholder, form textarea::placeholder {
+  color: #888;
+}
+form button#enviarWhatsapp {
+  background: #0f0;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button#enviarWhatsapp:hover {
+  background: #5f5; /* lighten on hover */
 }
 
-.nav-menu {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Seções específicas */
+#hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+#hero p {
+  font-size: 1.1em;
+  color: #ccc;
+}
+#servicos h3 {
+  margin-top: 1.2em;
+}
+#servicos p {
+  margin-bottom: 1em;
+  color: #ccc;
 }
 
-.nav-menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-.hero {
-    background: linear-gradient(to right, #3b82f6, #1e3a8a);
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
-.hero h2 {
-    font-size: 2rem;
-}
-
+/* Botão WhatsApp flutuante */
 .whatsapp-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.2rem;
-    background-color: #25D366;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  /* Efeito de brilho ao redor do ícone */
+  box-shadow: 0 0 10px #25d366;
+  border-radius: 50%;
+}
+.whatsapp-button:hover img {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
-.servicos {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.servicos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.servico-card {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.servico-card i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #1e3a8a;
-}
-
-.mapa {
-    padding: 2rem 1rem;
-    background-color: #f1f1f1;
-    text-align: center;
-}
-
-.mapa-container iframe {
-    border-radius: 8px;
-}
-
-.contato {
-    padding: 2rem 1rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-}
-
-input, select, textarea, button {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #1e3a8a;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #3b82f6;
-}
-
-footer {
-    background-color: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
+/* Responsividade (ajustes para telas menores) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 8px 0;
+  }
+  body {
+    font-size: 0.95em;
+  }
+  #hero {
+    padding: 30px 15px;
+  }
 }
